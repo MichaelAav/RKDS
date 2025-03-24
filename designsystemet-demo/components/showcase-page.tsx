@@ -253,7 +253,7 @@ export function ShowcasePage() {
                 Buttons
               </Heading>
               <Paragraph>Buttons are used to trigger actions or events.</Paragraph>
-
+              <Button variant='secondary'>I am a button!</Button>;
               <Card>
                 <div className="component-demo">
                   <Heading level={3} size="small">
