@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import {
+  //Henter ut komponenter
   Alert,
   Breadcrumbs,
   Button,
@@ -50,7 +51,7 @@ export function ShowcasePage() {
               fill="#1E2B3C"
             />
           </svg>
-          <Heading level={1} size="medium">
+          <Heading level={1} data-size="md">
             Designsystemet Showcase
           </Heading>
         </div>
@@ -77,7 +78,7 @@ export function ShowcasePage() {
       <main className="showcase-content">
         <div className="showcase-sidebar">
           <nav>
-            <Heading level={2} size="small">
+            <Heading level={2} data-size="sm">
               Components
             </Heading>
             <ul className="component-list">
@@ -109,14 +110,14 @@ export function ShowcasePage() {
         <div className="showcase-main">
           {selectedTab === "form-elements" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Form Elements
               </Heading>
               <Paragraph>Form elements are used to collect user input.</Paragraph>
 
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Checkbox
                   </Heading>
                   <Fieldset>
@@ -134,7 +135,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Radio Buttons
                   </Heading>
                   <Fieldset>
@@ -162,7 +163,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Switch
                   </Heading>
                   <div className="component-row">
@@ -180,7 +181,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Text Field
                   </Heading>
                   <div className="component-grid">
@@ -196,7 +197,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Fieldset
                   </Heading>
                   <Fieldset legend="Personal Information" description="Please provide your details">
@@ -210,7 +211,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Details
                   </Heading>
                   <Details>
@@ -249,14 +250,14 @@ export function ShowcasePage() {
 
           {selectedTab === "buttons" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Buttons
               </Heading>
               <Paragraph>Buttons are used to trigger actions or events.</Paragraph>
-              <Button variant='secondary'>I am a button!</Button>;
+              
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Button Variants
                   </Heading>
                   <div className="component-row">
@@ -269,7 +270,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Button Sizes
                   </Heading>
                   <div className="component-row">
@@ -280,7 +281,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Button States
                   </Heading>
                   <div className="component-row">
@@ -296,7 +297,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Full Width Button
                   </Heading>
                   <Button fullWidth>Full Width Button</Button>
@@ -307,14 +308,14 @@ export function ShowcasePage() {
 
           {selectedTab === "toggle-group" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Toggle Group
               </Heading>
               <Paragraph>Toggle groups allow users to select from multiple options.</Paragraph>
 
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Basic Toggle Group
                   </Heading>
                   <ToggleGroup
@@ -336,7 +337,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Multiple Selection
                   </Heading>
                   <ToggleGroup type="multiple" aria-label="Multiple selection">
@@ -353,7 +354,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Sizes
                   </Heading>
                   <div className="component-stack">
@@ -400,19 +401,19 @@ export function ShowcasePage() {
 
           {selectedTab === "cards" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Cards
               </Heading>
               <Paragraph>Cards are used to group related content and actions.</Paragraph>
 
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Basic Card
                   </Heading>
                   <Card border>
                     <div className="card-content">
-                      <Heading level={4} size="small">
+                      <Heading level={4} data-size="sm">
                         Card Title
                       </Heading>
                       <Paragraph>
@@ -424,13 +425,13 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Card Variants
                   </Heading>
                   <div className="component-grid">
                     <Card border>
                       <div className="card-content">
-                        <Heading level={4} size="small">
+                        <Heading level={4} data-size="sm">
                           With Border
                         </Heading>
                         <Paragraph>Card with a border.</Paragraph>
@@ -439,7 +440,7 @@ export function ShowcasePage() {
 
                     <Card>
                       <div className="card-content">
-                        <Heading level={4} size="small">
+                        <Heading level={4} data-size="sm">
                           Without Border
                         </Heading>
                         <Paragraph>Card without a border.</Paragraph>
@@ -448,7 +449,7 @@ export function ShowcasePage() {
 
                     <Card border className="custom-card">
                       <div className="card-content">
-                        <Heading level={4} size="small">
+                        <Heading level={4} data-size="sm">
                           Custom Styling
                         </Heading>
                         <Paragraph>Card with custom styling.</Paragraph>
@@ -458,12 +459,12 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Card with Header and Footer
                   </Heading>
                   <Card border>
                     <div className="card-header">
-                      <Heading level={4} size="small">
+                      <Heading level={4} data-size="sm">
                         Card Header
                       </Heading>
                     </div>
@@ -484,14 +485,14 @@ export function ShowcasePage() {
 
           {selectedTab === "tags" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Tags
               </Heading>
               <Paragraph>Tags are used to label, categorize, or organize items using keywords.</Paragraph>
 
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Tag Variants
                   </Heading>
                   <div className="component-row">
@@ -506,7 +507,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Tag Sizes
                   </Heading>
                   <div className="component-row">
@@ -517,7 +518,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Interactive Tags
                   </Heading>
                   <div className="component-row">
@@ -534,7 +535,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Tag Groups
                   </Heading>
                   <div className="tag-group">
@@ -551,7 +552,7 @@ export function ShowcasePage() {
 
           {selectedTab === "tabs" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Tabs
               </Heading>
               <Paragraph>
@@ -560,7 +561,7 @@ export function ShowcasePage() {
 
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Basic Tabs
                   </Heading>
                   <Tabs defaultValue="tab1">
@@ -571,7 +572,7 @@ export function ShowcasePage() {
                     </Tabs.List>
                     <Tabs.Panel value="tab1">
                       <div className="tab-content">
-                        <Heading level={4} size="small">
+                        <Heading level={4} data-size="sm">
                           First Tab Content
                         </Heading>
                         <Paragraph>This is the content for the first tab.</Paragraph>
@@ -579,7 +580,7 @@ export function ShowcasePage() {
                     </Tabs.Panel>
                     <Tabs.Panel value="tab2">
                       <div className="tab-content">
-                        <Heading level={4} size="small">
+                        <Heading level={4} data-size="sm">
                           Second Tab Content
                         </Heading>
                         <Paragraph>This is the content for the second tab.</Paragraph>
@@ -587,7 +588,7 @@ export function ShowcasePage() {
                     </Tabs.Panel>
                     <Tabs.Panel value="tab3">
                       <div className="tab-content">
-                        <Heading level={4} size="small">
+                        <Heading level={4} data-size="sm">
                           Third Tab Content
                         </Heading>
                         <Paragraph>This is the content for the third tab.</Paragraph>
@@ -597,7 +598,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Tab Sizes
                   </Heading>
                   <div className="component-stack">
@@ -659,14 +660,14 @@ export function ShowcasePage() {
 
           {selectedTab === "feedback" && (
             <section>
-              <Heading level={2} size="medium">
+              <Heading level={2} data-size="md">
                 Feedback Components
               </Heading>
               <Paragraph>Components that provide feedback to the user.</Paragraph>
 
               <Card>
                 <div className="component-demo">
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Alerts
                   </Heading>
                   <div className="component-stack">
@@ -678,7 +679,7 @@ export function ShowcasePage() {
 
                   <Divider />
 
-                  <Heading level={3} size="small">
+                  <Heading level={3} data-size="sm">
                     Error Summary
                   </Heading>
                   <ErrorSummary>
@@ -702,7 +703,7 @@ export function ShowcasePage() {
       <footer className="showcase-footer">
         <Divider />
         <div className="footer-content">
-          <Paragraph size="small">Designsystemet Showcase - Created with Digdir Designsystemet v1.0.2</Paragraph>
+          <Paragraph data-size="sm">Designsystemet Showcase - Created with Digdir Designsystemet v1.0.2</Paragraph>
           <Link href="https://designsystemet.no" external>
             Visit Designsystemet
           </Link>
